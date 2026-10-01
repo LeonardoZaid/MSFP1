@@ -89,9 +89,9 @@ for i in range(0,4):
     plt.rcParams['font.size'] = 11
     plt.rcParams['font.family'] = 'serif'
     plt.rcParams['font.serif'] = ['Times New Roman']
-    plt.plot(t,u[:,i],'-',color=clr1,label='Pao(t)')
-    plt.plot(t,PAu,'--',color=clr2,label='PA(t)')
-    plt.plot(t,PIDu,':',linewidth=2.5,color=clr3,label='PID(t)')
+    plt.plot(t,u[:,i],'-',color=clr1,label='Ve')
+    plt.plot(t,PAu,'--',color=clr2,label='Vs')
+    plt.plot(t,PIDu,':',linewidth=2.5,color=clr3,label='I(t)')
     plt.xlim(0,10); plt.xticks(np.arange(0,11,1))
     if i == 0 or i == 1 or i == 2:
         plt.ylim(-0.1,1.2); plt.yticks(np.arange(-0.1,1.3,0.1))
